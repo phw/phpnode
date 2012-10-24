@@ -1,11 +1,11 @@
 phpnode
 =======
 
-phpnode is a really simple web server with support for PHP.
+phpnode is a really simple web server based on node.js with support for PHP.
 
 This can be handy as an easy PHP development server. In contrast to
 PHP's built in web server phpnode can handle parallel requests due to
-node.js asynchroneous nature.
+node.js' asynchroneous nature.
 
 Usage
 -----
