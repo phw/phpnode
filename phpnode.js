@@ -1,3 +1,4 @@
+
 //
 // phpnode is a really simple web server with support for PHP.
 //
@@ -153,7 +154,8 @@ function handlePhpScript(req, res, filePath) {
     env.REDIRECT_STATUS = 1;
     env.SCRIPT_FILENAME = filePath;
     env.REQUEST_URI = req.url;
-    env.REMOTE_ADDR = '';
+    env.REMOTE_ADDR = req.connection.remoteAddress;
+    env.REMOTE_PORT = req.connection.remotePort;
     
     req.resume();
     cgi(PHP_EXECUTABLE, { env: env, stderr: process.stdout })(req, res);
