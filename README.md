@@ -7,6 +7,9 @@ This can be handy as an easy PHP development server. In contrast to
 PHP's built in web server phpnode can handle parallel requests due to
 node.js' asynchroneous nature.
 
+**NOTE:** This was only a proof of concept quickly assembled for a developer meeting.
+It is archived now here for future reference.
+
 Usage
 -----
 Copy phpnode.js to the document root of your web project and install the dependencies:
